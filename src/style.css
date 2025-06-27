@@ -1,0 +1,43 @@
+#game-grid {
+    display: grid;
+    grid-template-columns: repeat(25, 20px);
+    grid-template-rows: repeat(25, 20px);
+    gap: 2px;
+    border: 2px solid black;
+    width: max-content;
+    height: max-content;
+    margin-bottom: 20px;
+}
+.cell {
+    background-color: #ccc;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+#game-container {
+    font-family: 'Courier New', Courier, monospace;
+}
+.algo {
+    cursor: pointer;
+}
+#radio-container {
+    margin-bottom: 20px;
+}
+.center {
+    display: flex;
+    justify-content: center;
+}
+body {
+    background-color: rgb(250, 249, 246);
+}
+#title {
+    margin-bottom: 2px;
+}
+#tutorial-text {
+    width: 550px;
+    text-align: center;
+    margin-bottom: 2px;
+}
+#generate-button {
+    cursor: pointer;
+}
