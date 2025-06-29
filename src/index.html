@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
         <title>Pathfinder | visualise shortest path algorithms</title>
         <link rel="stylesheet" href="style.css">
 
@@ -15,16 +16,16 @@
                 <p id="tutorial-text">First choose the Startpoint, set the walls up and choose an Endpoint. Then choose your favorite shortest path algorithm and generate your path.</p>
             </div>
             <div class="center">
-                <h3 id="game-step">Choose the Startpoint</h3>
+                <h3 id="game-step"></h3>
             </div>
             <div class="center">
                 <div id="game-grid"></div>
             </div>
             <div class="center">
                 <div id="radio-container">
-                    <input type="radio" name="radAnswer" class="algo"> Breadth First Search
-                    <input type="radio" name="radAnswer" class="algo"> Depth First Search
-                    <input type="radio" name="radAnswer" class="algo"> Dijkstra
+                    <input type="radio" name="radAnswer" class="algo" value="bfs"> Breadth First Search
+                    <input type="radio" name="radAnswer" class="algo" value="dfs"> Depth First Search
+                    <input type="radio" name="radAnswer" class="algo" value="dijkstra"> Dijkstra
                 </div>
             </div>
             <div class="center">
@@ -46,7 +47,8 @@
             const x = 3;
             const y = 4;
             const ziel = document.querySelector(`.cell[data-x="${x}"][data-y="${y}"]`);
-            ziel.style.backgroundColor = "red";
+            //ziel.style.backgroundColor = "red";
+            // console.log(ziel.style.backgroundColor);
         </script>
         <script src="script.js"></script>
     </body>
